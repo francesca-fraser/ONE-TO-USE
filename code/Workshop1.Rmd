@@ -226,10 +226,13 @@ Question: what does the "se = FALSE" do?
 
 # Exercise:
 1.  What geom would you use to draw a line chart? A boxplot? A histogram? An area chart?
-2.  Run this code in your head and predict what the output will look like. Then, run the code in R and check your predictions.
+i would use the resepctive graph type, ie geom line for a line chart, boxplot for a box plot ect. as predicted these specific codes generated the correct plots. 
+2.  Run this code in your head and predict what the output will look like. Then, run the code in R and check your predictions
+- after running the code below, i've found that my prediction was seen and correct. 
 
 ```{r}
-x
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_boxplot() 
 ```
 
 
@@ -239,11 +242,13 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
   geom_point() + 
   geom_smooth()
 
+#
+```
+```{r}
 ggplot() + 
   geom_point(data = mpg, mapping = aes(x = displ, y = hwy)) + 
   geom_smooth(data = mpg, mapping = aes(x = displ, y = hwy))
 ```
-
 
 # Transformations and stats
 
@@ -279,6 +284,7 @@ ggplot(data = demo) +
   geom_bar(mapping = aes(x = cut, y = freq), stat = "identity")
 ```
 Question: Why did we specify now specify a y axis?
+- due to the data being able to be presented in either way and having a non numerical category, the values needed to be specified to correctly collate and present data. 
 
 # What if we want to know the proportion rather than the absolute frequency?
 ```{r}
