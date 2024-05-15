@@ -1,0 +1,22 @@
+---
+title: "Plot Deconstruction - Graphical Story telling in R"
+author: "Francesca Fraser"
+date: "2024-05-15"
+output: html_document
+---
+
+The message: 
+I think the authors were trying to depict the actual number of whale entanglement observations found, each month colored by year (individual years can be seen in the figure). 
+
+Problems: 
+1. Visulaisation is faulty - the information is overlapping and difficult to read. 
+2. The colour scheme is okay but would look better with a more contrasting colour scheme as the ombre sees several colours looking the exact same making it difficult to differentiate.  
+
+Caption: 
+The total monthly observed entanglements of whales annually from 1990 to 2021, but with better visualisation and colourscheme.  
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
